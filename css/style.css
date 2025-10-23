@@ -11542,7 +11542,9 @@ body:has(#search.open):before {
 }
 
 .footer .min-footer .footer-logo img {
-  height: 50px;
+  height: 35px;
+  position: relative;
+  left: -5px;
 }
 
 .footer .min-footer .footer-top {
