@@ -11938,3 +11938,10 @@ body:has(#search.open):before {
     width: 95%;
   }
 }
+
+.hero-logo img {
+  height: 75px;
+  position: relative;
+  left: -5px;
+  margin-bottom: 25px;
+}
