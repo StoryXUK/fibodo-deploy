@@ -11766,6 +11766,11 @@ body:has(#search.open):before {
   padding-left: 10px;
 }
 
+.widget-menu ul.product-links li a {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .widget-address ul {
   padding: 0px;
   margin-bottom: 30px;
