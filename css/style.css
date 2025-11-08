@@ -12076,3 +12076,49 @@ body:has(#search.open):before {
   left: -5px;
   margin-bottom: 25px;
 }
+
+
+
+
+@media (max-width: 991px) {
+        .leadership-card {
+          margin-bottom: 20px;
+        }
+        .col-lg-4.offset-lg-2 {
+          margin-left: 0 !important;
+        }
+      }
+      @media (max-width: 767px) {
+        .leadership-card h3 {
+          font-size: 22px !important;
+        }
+        .leadership-card h4 {
+          font-size: 16px !important;
+        }
+        .leadership-card p {
+          font-size: 14px !important;
+        }
+        .team-cta-section {
+          padding: 60px 0 !important;
+        }
+        .team-cta-section h2 {
+          font-size: 32px !important;
+        }
+        .team-cta-section p {
+          font-size: 18px !important;
+        }
+      }
+      @media (max-width: 575px) {
+        .team-cta-section h2 {
+          font-size: 28px !important;
+        }
+        .team-cta-section p {
+          font-size: 16px !important;
+        }
+        .team-cta-section .btn {
+          padding: 12px 35px !important;
+          font-size: 16px !important;
+        }
+      }
+
+      
