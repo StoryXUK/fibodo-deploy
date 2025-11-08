@@ -12121,4 +12121,26 @@ body:has(#search.open):before {
         }
       }
 
+/* Fix spacing around strong tags */
+strong {
+  margin: 0;
+  padding: 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+.accordion-button strong,
+.accordion-body strong,
+p strong,
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
       
