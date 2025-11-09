@@ -9380,6 +9380,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
 /*Section Title*/
 .section-title {
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .section-title .subtitle {
@@ -9402,6 +9403,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   font-size: 34px;
   font-weight: 600;
   line-height: 46px;
+  text-align: left;
 }
 
 .section-title .title {
@@ -9411,6 +9413,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   line-height: 60px;
   margin-bottom: 0;
   color: #0d1615;
+  text-align: left;
 }
 
 .section-title p {
@@ -9419,6 +9422,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   line-height: 30px;
   margin-top: 30px;
   color: #606060;
+  text-align: left;
 }
 
 .bg-dark .section-title .subtitle {
@@ -12120,5 +12124,35 @@ body:has(#search.open):before {
           font-size: 16px !important;
         }
       }
+
+/* Force all section headings to be left-aligned */
+.text-center .section-title,
+.text-center .section-title .title,
+.text-center .section-title h1,
+.text-center .section-title h2,
+.text-center .section-title h3,
+.text-center .section-title h4,
+.text-center .section-title h5,
+.text-center .section-title h6,
+.text-center .section-title p,
+.text-center .section-title .subtitle {
+  text-align: left !important;
+}
+
+.text-center h1.title,
+.text-center h2.title,
+.text-center h3.title,
+.text-center h1.title-main,
+.text-center .banner-description {
+  text-align: left !important;
+}
+
+.col-md-12.text-center h1,
+.col-md-12.text-center h2,
+.col-md-12.text-center h3,
+.col-md-12.text-center .title,
+.col-md-12.text-center .section-title {
+  text-align: left !important;
+}
 
       
