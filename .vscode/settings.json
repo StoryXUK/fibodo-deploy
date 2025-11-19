@@ -27,5 +27,8 @@
    "workbench.editor.autoLockGroups": {
       "workbench.editor.chatSession": false,
       "workbench.editorinputs.searchEditorInput": true
+   },
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
    }
 }
