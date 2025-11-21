@@ -1703,6 +1703,11 @@ section:has(.rounded-section) {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  /* Override for direct rounded-section */
+  .slider-01.rounded-section {
+    margin: 0 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1733,6 +1738,11 @@ section:has(.rounded-section) {
   section:has(.rounded-section) {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  /* Override for direct rounded-section on mobile */
+  .slider-01.rounded-section {
+    margin: 0 12px;
   }
 }
 
@@ -8873,6 +8883,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   line-height: 1.2em;
   margin: 0;
   text-align: inherit;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .slider-01 .swiper-slide .hero-item-content .item-description {
@@ -8886,6 +8897,7 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   line-height: 32px;
   color: #ffffff;
   margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .slider-01 .swiper-slide .hero-item-content .item-buttons .hero-button {
@@ -9294,6 +9306,21 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   .hero-logo img {
     height: 50px;
     margin-bottom: 15px;
+    left: 0;
+  }
+
+  .slider-01.rounded-section {
+    margin: 0 12px;
+    border-radius: 15px;
+  }
+
+  .slider-01 .swiper-slide .swipeinner {
+    padding: 30px 15px;
+  }
+
+  .slider-01 .swiper-slide {
+    min-height: 450px;
+    padding: 40px 0;
   }
 }
 
@@ -9313,6 +9340,16 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
 
   .hero-logo img {
     height: 45px;
+    left: 0;
+  }
+
+  .slider-01.rounded-section {
+    margin: 0 10px;
+    border-radius: 12px;
+  }
+
+  .slider-01 .swiper-slide .swipeinner {
+    padding: 25px 12px;
   }
 }
 
@@ -9346,6 +9383,16 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
   .hero-logo img {
     height: 60px;
     margin-bottom: 20px;
+    left: 0;
+  }
+
+  .slider-01.rounded-section {
+    margin: 0 15px;
+    border-radius: 18px;
+  }
+
+  .slider-01 .swiper-slide .swipeinner {
+    padding: 35px 18px;
   }
 }
 
@@ -9371,6 +9418,16 @@ header.header.header-sticky.is-sticky.header-02 .navbar .navbar-brand img.sticky
 
   .hero-logo img {
     height: 65px;
+    left: 0;
+  }
+
+  .slider-01.rounded-section {
+    margin: 0 20px;
+    border-radius: 20px;
+  }
+
+  .slider-01 .swiper-slide .swipeinner {
+    padding: 40px 20px;
   }
 }
 
@@ -12079,6 +12136,39 @@ body:has(#search.open):before {
   position: relative;
   left: -5px;
   margin-bottom: 25px;
+  max-width: 100%;
+  width: auto;
+}
+
+/* Fix for rounded section structure */
+.slider-01.rounded-section {
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 40px;
+}
+
+/* Ensure swiper container respects rounded corners */
+.slider-01.rounded-section .swiper-container,
+.slider-01.rounded-section #main-slider {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* Improve text visibility on all devices */
+.slider-01 .swiper-slide:before {
+  opacity: 0.6 !important;
+}
+
+/* Ensure content has proper padding on all devices */
+.slider-01 .swiper-slide .swipeinner {
+  padding: 40px 20px;
+}
+
+/* Better responsive height for slides */
+.slider-01 .swiper-slide {
+  min-height: 500px;
+  height: auto;
+  padding: 60px 0;
 }
 
 
