@@ -12251,3 +12251,8 @@ body:has(#search.open):before {
   font-size: 18px !important;
   line-height: 28px !important;
 }
+
+.font-20 {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
