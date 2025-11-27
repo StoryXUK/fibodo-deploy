@@ -12247,5 +12247,7 @@ body:has(#search.open):before {
 
       
 
-.font-18 {font-size: 18px;
-  line-height: 22px;}
+.font-18 {
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
